@@ -2,163 +2,20 @@
 Ubicacion de gobiernos subnacionales
 
 
+ #MODELO DE ESCRITO DE REHABILITACIÓN PENAL
 
-<!DOCTYPE html>
-<html> 
-<head> 
-  <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
-  <title>Munis de Puno</title> 
-  <script src="http://maps.google.com/maps/api/js?sensor=false" 
-          type="text/javascript"></script>
-</head> 
-<body>
-  <div id="map" style="width: 1200px; height: 600px;"></div>
-
-  <script type="text/javascript">
-    var locations = [
-['ACHAYA',-15.269444, -70.143056, 17], 
-['ACORA',-15.975109, -69.804082,  2],
-['AJOYANI',-14.230833, -70.224722, 32],
-['ALTO INAMBARI',-13.073613, -70.384383,102],  
-['AMANTANI',-15.664167, -69.71,  3],
-['ANANEA',-14.6325, -69.445833, 85],
-['ANAPIA',-16.291903, -68.871965,105],
-['ANTAUTA',-14.881944, -70.59, 72],
-['ARAPA',-15.141667, -70.1175, 18],
-['ASILLO',-14.792778, -70.356111, 19],
-['ATUNCOLLA',-15.688499, -70.144781,  4], 
-['AYAPATA',-13.777778, -70.3225, 33], 
-['AZANGARO',-14.909722, -70.197222, 16],  
-['CABANA',-15.298333, -70.355, 90],
-['CABANILLA',-15.615556, -70.366667, 62], 
-['CABANILLAS',-15.641203, -70.349191, 91], 
-['CALAPUJA',-15.317778, -70.224167, 63], 
-['CAMINACA',-15.314444, -70.2025, 20], 
-['CAPACHICA',-15.6423668,-69.8313474,  5],  
-['CAPASO',-17.183725, -69.744498, 49], 
-['CARABAYA - MACUSANI',-14.068611, -70.431389, 31],    
-['CARACOTO',-15.569177, -70.107236, 92],  
-['CHUCUITO - JULI',-16.213469, -69.458617, 41],
-['CHUCUITO',-15.901319, -69.897044,  6],
-['CHUPA',-15.104722, -69.995556, 21],
-['COASA',-13.986667, -70.017222, 34],
-['COATA',-15.5652623,-69.98052,  7],
-['COJATA',-15.099722, -69.526111, 54],
-['CONDURIRI',-16.615556, -69.7025, 52],
-['CONIMA',-15.4613, -69.437296, 81],
-['COPANI',-16.399772, -69.040327,106],
-['CORANI',-13.875278, -70.608056, 35],
-['CRUCERO',-14.360556, -70.022222, 36], 
-['CUPI',-14.904121, -70.870786, 73],
-['CUTURAPI',-16.270301, -69.177768,107], 
-['CUYOCUYO',-14.482898, -69.830201, 95],  
-['DESAGUADERO',-16.5681131,-69.0475486, 42],   
-['EL COLLAO - ILAVE',-16.0862931,-69.6458454, 48], 
-['HUACULLANI',-16.630458, -69.600178, 43], 
-['HUANCANE',-15.199722, -69.763056, 53],  
-['HUATA',-15.6156703,-69.9741738,  8],   
-['HUATASANI',-15.054615, -69.811549, 55], 
-['HUAYRAPATA',-15.321812, -69.346004, 82],  
-['INCHUPALLA',-15.00601, -69.963314, 56], 
-['ITUATA',-13.791111, -70.251389, 37],
-['JD CHOQUEHUANCA',-14.996389, -70.272778, 22],        
-['KELLUYO',-16.630458, -69.600178, 44], 
-['LAMPA',-15.363333, -70.366111, 61],
-['LIMBANI',-14.136147, -70.26042, 96],
-['LLALLI',-14.946982, -70.884626, 74],
-['MACARI',-14.772579, -70.911802, 75],
-['MAÑAZO',-15.801049, -70.347991,  9],
-['MELGAR - AYAVIRI',-14.881822, -70.590061, 71], 
-['MOHO',-15.360556, -69.499722, 80],
-['MUÑANI',-14.763611, -69.9525, 23],
-['NICASIO',-15.241944, -70.265, 64],
-['NUÑOA',-14.48, -70.641111, 76],
-['OCUVIRI',-15.120967, -71.209568, 65],
-['OLLACHEA',-13.794722, -70.471389, 38], 
-['OLLARAYA',-16.219471, -68.99144,108],  
-['ORURILLO',-14.727518, -70.803051, 77],
-['PALCA',-15.322222, -70.605, 66],
-['PARATIA',-15.458056, -70.6075, 67],
-['PATAMBUCO',-14.270361, -69.848081, 97],  
-['PAUCARCOLLA',-15.746224, -70.058549, 10],   
-['PEDRO VILCA APAZA',-15.06224, -69.883717, 86],   
-['PHARA',-14.073974, -70.1005, 98],
-['PICHACANI',-16.147682, -70.067449, 11],
-['PILCUYO',-16.111792, -69.556289, 50],
-['PISACOMA',-16.907991, -69.36563, 45], 
-['PLATERIA',-15.949404, -69.837084, 12],
-['POMATA',-16.266667, -69.308755, 46], 
-['POTONI',-14.336111, -70.100278, 24],
-['PUCARA',-15.048889, -70.378611, 68], 
-['PUNO',-15.839632, -70.021528,  1],
-['PUSI',-15.442326, -69.931111, 57],
-['QUIACA',-14.430606, -69.632444, 99],
-['QUILCAPUNCU',-14.894055, -69.736674, 87],  
-['ROSASPATA',-15.2355092,-69.5288725, 58],  
-['SAMAN',-15.2922471,-70.0219094, 25], 
-['SAN ANTON',-14.588056, -70.310833, 26], 
-['SAN ANTONIO DE PUTINA',-14.913889, -69.873611, 84],   
-['SAN ANTONIO',-16.098612, -70.558323, 13], 
-['SAN GABAN',-13.433333, -70.389444, 39],  
-['SAN JOSE',-14.687222, -70.174444, 27], 
-['SAN JUAN DE SALINAS',-15.014167, -70.27, 28],  
-['SAN JUAN DEL ORO',-14.286907, -69.216567,100],   
-['SAN MIGUEL',-15.502624, -70.1335, 93], 
-['SAN PEDRO DE PUTINA PUNCO',-14.112918, -69.0457,103],      
-['SAN ROMAN - JULIACA',-15.502624, -70.13343, 89],  
-['SANDIA',-14.233333, -69.433333, 94],
-['SANTA LUCIA',-15.695556, -70.609167, 69], 
-['SANTA ROSA',-16.742116, -69.723315, 51],  
-['SANTA ROSA',-16.742116, -69.723315, 78],  
-['SANTIAGO DE PUPUJA',-15.055556, -70.278056, 29],    
-['SINA',-14.501324, -69.574871, 88],
-['TARACO',-15.2986116,-69.9803188, 59], 
-['TILALI',-15.516626, -69.350939, 83],
-['TINICACHI',-16.198541, -68.960792,109],
-['TIQUILLACA',-15.797436, -70.189515, 14],
-['TIRAPATA',-14.9561, -70.4042, 30],
-['UMACHIRI',-14.853224, -70.754839, 79],
-['UNICACHI',-16.222294, -68.990748,110],
-['USICAYOS',-14.1264, -69.9678, 40],
-['VILAVILA',-15.193889, -70.674167, 70],
-['VILQUE CHICO',-15.215226, -69.690528, 60], 
-['VILQUE',-15.766234, -70.26113, 15],
-['YANAHUAYA',-14.256626, -69.173044,101],   
-['YUNGUYO',-16.244167, -69.0925,104],  
-['ZEPITA',-16.498784, -69.110055, 47],
-['MARISCAL NIETO - MOQUEGUA',-17.193803, -70.934564,111],      
-['CARUMAS',-16.809291, -70.694805,112],  
-['CUCHUMBAYA',-16.750976, -70.686143,113],    
-['SAMEGUA',-17.181938, -70.899914,114],  
-['xx',-16.739013, -70.684522,115],
-['yy',-17.077646, -70.847569,116] 
-    ];
-
-    var map = new google.maps.Map(document.getElementById('map'), {
-      zoom: 8,
-      center: new google.maps.LatLng( -15.427280, -70.572449),
-      mapTypeId: google.maps.MapTypeId.ROADMAP
-    });
+EXPEDIENTE :  |  04422-2012-0-1501
+--------------|--------------
+CUADERNO    :  |  PRINCIPAL
+SUMILLA         :  |  SOLICITO REHABILITACIÓN
 
 
+SEÑOR JUEZ DEL TERCER JUZGADO PENAL LIQUIDADOR DE HUANCAYO
+……………………………………………, en el Proceso Penal que se me instruyó por el Delito de Encubrimiento Real (Tipo Base), a Ud. Atentamente digo:
 
-    var infowindow = new google.maps.InfoWindow();
+Que, habiéndose cumplido con la pena impuesta por el órgano jurisdiccional en la sentencia de fecha 21 de abril del 2018, por lo que se me impuso un año de pena privativa de libertad suspendida por el PERIODO DE PRUEBA DE UN AÑO, y en estricto cumplimiento con lo dispuesto en nuestro ordenamiento jurídico artículos 69° y 70° del C.P. vengo a solicitar a su despacho disponga por quien corresponda efectúe la consecuente REHABILITACION de la condena ejecutada, debiéndose oficiar la anulación de los antecedentes generados en el presente proceso fenecido. Asimismo, cumplo con acompañar la resolución S/N de fecha 29 de diciembre del 2014, la cual acredita que la REPARACIÓN CIVIL ha sido cancelada en su totalidad por mi persona.
 
-    var marker, i;
+POR TANTO: 
+A Ud. solicito señor Juez que sirva proceder conforme a lo requerido por ser de justicia.
 
-    for (i = 0; i < locations.length; i++) {  
-      marker = new google.maps.Marker({
-        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-        map: map
-      });
-
-      google.maps.event.addListener(marker, 'click', (function(marker, i) {
-        return function() {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        }
-      })(marker, i));
-    }
-  </script>
-</body>
-</html>
+Tacna, 14 de abril del 2016
