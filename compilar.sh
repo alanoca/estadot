@@ -17,6 +17,8 @@ https://latexonline.cc/compile?git=https://github.com/posquit0/Awesome-CV/&targe
   # Con errores
   https://latexonline.cc/compile?git=https://github.com/alanoca/munis&target=modelo.tex&command=xelatex  
   https://latexonline.cc/compile?git=https://github.com/alanoca/munis&target=modelo.tex&command=lualatex
+  
+  https://www.papeeria.com/p/d8f958ed082f44b1348ad874efebee95#/empty.tex
 
 # URL
 # Usae
